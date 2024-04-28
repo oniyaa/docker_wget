@@ -1,1 +1,1 @@
-# 使用docker 并行下载
+wget通过docker并行下载
