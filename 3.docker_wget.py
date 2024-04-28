@@ -14,5 +14,5 @@ for x in os.listdir("INPUT"):
     if x.startswith(PREFIX_NAME):
         os.system(f'mkdir OUTPUT/{x}')
         print("run docker ", x)
-        os.system(f'docker run -d --rm --name {x} -v {USER_DIR}:/DOWNLOADS dwget wget -i INPUT/{x} -P OUTPUT/{x}')
+        os.system(f'docker run -d --rm --name {x} -v {USER_DIR}:/DOWNLOADS oniyaa/dwget wget -i INPUT/{x} -P OUTPUT/{x}')
 
